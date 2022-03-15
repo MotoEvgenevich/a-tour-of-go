@@ -9,7 +9,8 @@ func main() {
 	fmt.Print("Enter two string:")
 	var two string
 	fmt.Scanln(&two)
-	fmt.Print(first + two)
+	fmt.Print(first + " " + two)
+	//можно выполнить конкатинацию так (first, " " + two)
 }
 
 /* In this program, user is asked to enter two string.
