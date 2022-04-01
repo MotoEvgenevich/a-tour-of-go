@@ -3,12 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	grade := 92
-	if grade >= 90 {
+	grade := 90
+	if grade >= 65 {
 		fmt.Print("Passing grade of: ")
 
 		if grade >= 90 {
-			fmt.Println("A")
+			if grade > 96 {
+				fmt.Println("A+")
+			} else if grade > 93 && grade <= 96 {
+				fmt.Println("A")
+			} else {
+				fmt.Println("A-")
+			}
 
 		} else if grade >= 80 {
 			fmt.Println("B")
