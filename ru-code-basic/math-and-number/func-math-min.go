@@ -15,8 +15,6 @@ func main() {
 
 }
 
-func MinInt(x, y float64) float64 {
-	var z float64 = math.Min(x, y)
-	return z
-
+func MinInt(x, y int) int {
+	return int(math.Min(float64(x), float64(y)))
 }
